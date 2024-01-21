@@ -10,7 +10,7 @@ enum ButtonAction {
 }
 
 export default function FooterButtons({ handleButton }: TProps) {
-	const [activeButton, setActiveButton] = useState<string | null>(null); 
+	const [activeButton, setActiveButton] = useState<string | null>(ButtonAction.RECORD); 
 
 	const buttons = [
 		{ action: ButtonAction.RECORD, color: 'red', text: 'Record' },
